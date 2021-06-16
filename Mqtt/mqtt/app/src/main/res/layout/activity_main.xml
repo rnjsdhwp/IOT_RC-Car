@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D5EF8F"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/detection"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Detection"
+        android:drawableTop="@drawable/pic_detection"
+        android:paddingLeft="20dp"
+        android:background="@drawable/btn_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="15">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D40098"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 조이스틱"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/joy"
+            android:textSize="25dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text=""
+
+                />
+            <Button
+                android:id="@+id/btn01"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="▲"
+                android:textSize="50dp"
+                android:gravity="center"
+
+                android:background="@drawable/btn2_background"
+
+              />
+            <Button
+                android:id="@+id/buzzer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:drawableTop="@drawable/music"
+                android:background="#000000"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn02"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="◀"
+                android:textSize="50dp"
+                android:background="@drawable/btn2_background"/>
+            <Button
+                android:id="@+id/btn03"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="▼"
+                android:textSize="50dp"
+                android:background="@drawable/btn2_background"/>
+            <Button
+                android:id="@+id/btn04"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="▶"
+                android:textSize="50dp"
+                android:background="@drawable/btn2_background"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
